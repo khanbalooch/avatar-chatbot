@@ -1,5 +1,6 @@
-https://github.com/asanchezyali/talking-avatar-with-ai/assets/29262782/da316db9-6dd1-4475-9fe5-39dafbeb3cc4
-
+<div align="center">
+  <video src="resources/Video-Avatar.mp4" alt="System Architecture" width="100%">
+</div>
 ## Virtual Human Chatbot
 
 This project is a virtual human chatbot that can talk and listen to you using ASR(Automatic Speech Recognition) techonology. 
