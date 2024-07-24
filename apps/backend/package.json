@@ -4,8 +4,10 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js --ext js"
+    "start": "npm run config | npm run client",
+    "config": "node config-overrides.cjs",
+    "client": "node server.js",
+    "dev": "npm run config | nodemon server.js --ext js"
   },
   "dependencies": {
     "@langchain/openai": "^0.0.12",
@@ -15,6 +17,8 @@
     "express": "^4.18.2",
     "langchain": "^0.1.4",
     "openai": "^4.11.1",
+    "request": "^2.88.2",
+    "sqlite3": "^5.1.6",
     "zod": "^3.22.4"
   },
   "devDependencies": {

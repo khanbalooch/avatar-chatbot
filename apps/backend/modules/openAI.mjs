@@ -1,4 +1,5 @@
 import { ChatOpenAI } from "@langchain/openai";
+
 import { ChatPromptTemplate } from "@langchain/core/prompts";
 import { StructuredOutputParser } from "langchain/output_parsers";
 import { z } from "zod";
@@ -21,12 +22,13 @@ const prompt = ChatPromptTemplate.fromMessages([
   ["human", "{question}"],
 ]);
 
+
 const model = new ChatOpenAI({
   openAIApiKey: process.env.OPENAI_API_KEY || "-",
   modelName: process.env.OPENAI_MODEL || "davinci",
   temperature: 0.2,
 });
-
+console.log('################### 2');
 const parser = StructuredOutputParser.fromZodSchema(
   z.object({
     messages: z.array(
