@@ -1,11 +1,12 @@
 <div align="center">
-  <video src="resources/Video-Avatar.mp4" alt="System Architecture" width="100%">
+  <video width="100%" controls>
+    <source src="resources/VirtualHuman.mp4" type="video/mp4">
+</video>
 </div>
 ## Virtual Human Chatbot
 
 This project is a virtual human chatbot that can talk and listen to you using ASR(Automatic Speech Recognition) techonology. 
-It uses OpenAI's GPT-3 to generate responses, OpenAI's
-Whisper to transcript the audio, Eleven Labs to generate voice and Rhubarb Lip Sync to generate the lip sync.
+It uses OpenAI's GPT-3 to generate responses, OpenAI's Whisper to transcript the audio, Eleven Labs to generate voice and Rhubarb Lip Sync to generate the lip sync.
 
 The brain of this project is based on Open AI, where the avatar characteristics and the shape of the response are
 defined in the following technologies:
@@ -47,25 +48,47 @@ Before using this system, ensure you have the following prerequisites:
 2. **Eleven Labs Subscription:** You need to have a subscription with Eleven Labs. If you don't have one yet, you can sign up [here](https://elevenlabs.io/).
 3. **Rhubarb Lip-Sync:** Download the latest version of Rhubarb Lip-Sync compatible with your operating system from the official [Rhubarb Lip-Sync repository](https://github.com/DanielSWolf/rhubarb-lip-sync/releases). Once downloaded, create a `/bin` directory in the backend and move all the contents of the unzipped `rhubarb-lip-sync.zip` into it.
 
-
 ### Installation
 
 1. Clone this repository:
   
 ```bash
-git clone git@github.com:Monadical-SAS/digital-human.git
+git clone https://estokyam-admin@bitbucket.org/estokyam/video-avatar-chatbot.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd digital-human
+cd Video-Avatar-Chatbot
 ```
 
 3. Install dependencies for monorepo:
+
+First run npm install yarn -g to install yarn globally (if you haven't already).
+
+Then run:
+
 ```bash
-yarn
+yarn or npm i
+
 ```
+
+Install backend package:
+
+```bash
+cd apps/backend
+yarn or npm i
+
+```
+
+Install frontend package:
+
+```bash
+cd apps/frontend
+yarn or npm i
+
+```
+
 4. Create a .env file in the root `/apps/backend/` of the project and add the following environment variables:
 
 ```bash
@@ -82,16 +105,8 @@ ELEVEN_LABS_MODEL_ID=<YOUR_ELEVEN_LABS_MODEL_ID>
 5. Run the development system:
 
 ```bash
-yarn dev
+yarn dev or npm run dev
 ```
-
-6. If you need install another dependence in the monorepo, you can do this:
-
-```bash
-yarn add --dev -W <PACKAGE_NAME>
-yarn
-```
-
 
 Open [http://localhost:5173/](http://localhost:5173/) with your browser to see the result.
 

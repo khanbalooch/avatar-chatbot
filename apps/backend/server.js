@@ -6,8 +6,6 @@ import { openAIChain, parser } from "./modules/openAI.mjs";
 import { lipSync } from "./modules/lip-sync.mjs";
 import { sendDefaultMessages } from "./modules/defaultMessages.mjs";
 import { convertAudioToText } from "./modules/whisper.mjs";
-// import { fetchData } from "./modules/ASR.mjs";
-import axios from 'axios';
 
 dotenv.config();
 
