@@ -1,5 +1,5 @@
 {
-  "name": "Virtual Huamn Avatar",
+  "name": "video-avatar-chatbot",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -8,8 +8,8 @@
     "apps/*"
   ],
   "scripts": {
-    "client": "yarn --cwd apps/frontend dev",
     "server": "yarn --cwd apps/backend dev",
+    "client": "yarn --cwd apps/frontend dev",
     "dev": "npm-run-all --parallel client server"
   },
   "devDependencies": {
