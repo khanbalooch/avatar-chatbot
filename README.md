@@ -53,7 +53,7 @@ Before using this system, ensure you have the following prerequisites:
 1. Clone this repository:
   
 ```bash
-git clone https://estokyam-admin@bitbucket.org/estokyam/video-avatar-chatbot.git
+git clone https://estokyam-admin@bitbucket.org/estokyam/virtual-avatar-chatbot.git
 ```
 
 2. Navigate to the project directory:
