@@ -59,37 +59,29 @@ git clone https://estokyam-admin@bitbucket.org/estokyam/virtual-avatar-chatbot.g
 2. Navigate to the project directory:
 
 ```bash
-cd Video-Avatar-Chatbot
+cd virtual-avatar-chatbot
 ```
 
 3. Install dependencies for monorepo:
 
-First run npm install yarn -g to install yarn globally (if you haven't already).
+First run npm install or yarn -g to install yarn globally (if you haven't already).
 
 Then run:
 
 ```bash
-yarn or npm i
+npm i or yarn
 
 ```
 
-Install backend package:
+4. Run the development system:
 
 ```bash
-cd apps/backend
-yarn or npm i
-
+npm run dev or yarn dev
 ```
 
-Install frontend package:
+Open [http://localhost:5173/](http://localhost:5173/) with your browser to see the result.
 
-```bash
-cd apps/frontend
-yarn or npm i
-
-```
-
-4. Create a .env file in the root `/apps/backend/` of the project and add the following environment variables:
+5. Create a .env file in the root `/apps/backend/` of the project and add the following environment variables:
 
 ```bash
 # OPENAI
@@ -101,14 +93,6 @@ ELEVEN_LABS_API_KEY=<YOUR_ELEVEN_LABS_API_KEY>
 ELVEN_LABS_VOICE_ID=<YOUR_ELEVEN_LABS_VOICE_ID>
 ELEVEN_LABS_MODEL_ID=<YOUR_ELEVEN_LABS_MODEL_ID>
 ```
-
-5. Run the development system:
-
-```bash
-yarn dev or npm run dev
-```
-
-Open [http://localhost:5173/](http://localhost:5173/) with your browser to see the result.
 
 ## References
 * How ChatGPT, Bard and other LLMs are signaling an evolution for AI digital humans: https://www.digitalhumans.com/blog/how-chatgpt-bard-and-other-llms-are-signaling-an-evolution-for-ai-digital-humans
